@@ -1,0 +1,125 @@
+# ============================================================
+# Obsidian
+# ============================================================
+.mma-management/
+.obsidian/
+.obsidian-vault/
+docs/vault/
+.trash/
+.obsidian-vault/
+docs/vault/
+# Ignore Obsidian internal state, keep the notes
+**/.obsidian/workspace.json
+**/.obsidian/workspace-mobile.json
+**/.obsidian/cache
+**/.obsidian/plugins/*/data.json
+
+# ============================================================
+# OS / Editor
+# ============================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json.example
+
+# ============================================================
+# Environment / Secrets
+# ============================================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+config/master.key
+config/credentials/*.key
+config/credentials/*.yml.enc
+
+# ============================================================
+# Rails (api/)
+# ============================================================
+api/log/*
+api/tmp/*
+!api/log/.keep
+!api/tmp/.keep
+api/storage/*
+!api/storage/.keep
+api/public/assets/
+api/public/packs/
+api/public/packs-test/
+api/node_modules/
+api/yarn-error.log
+api/.byebug_history
+api/coverage/
+api/rspec.xml
+
+# Bundler
+api/.bundle/
+api/vendor/bundle/
+api/vendor/ruby/
+
+# ============================================================
+# Node / React / Vite (web/)
+# ============================================================
+node_modules/
+web/node_modules/
+web/dist/
+web/dist-ssr/
+web/.vite/
+web/.cache/
+web/coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-store/
+
+# ============================================================
+# Ionic / Capacitor (if you go native later)
+# ============================================================
+web/ios/App/Pods/
+web/ios/App/build/
+web/android/.gradle/
+web/android/build/
+web/android/app/build/
+web/android/local.properties
+web/ios/App/App/public/
+
+# ============================================================
+# Test / Coverage
+# ============================================================
+coverage/
+.nyc_output/
+*.lcov
+.rspec_status
+
+# ============================================================
+# Build / Temp
+# ============================================================
+tmp/
+temp/
+*.log
+*.pid
+*.seed
+*.pid.lock
+.cache/
+dist/
+build/
+out/
+
+# ============================================================
+# Docker (if used)
+# ============================================================
+.docker/
+docker-compose.override.yml
