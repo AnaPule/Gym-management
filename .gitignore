@@ -4,7 +4,8 @@
 .mma-management/
 .obsidian/
 .obsidian-vault/
-docs/vault/
+obsidian-vault/
+# docs/vault/
 .trash/
 .obsidian-vault/
 docs/vault/

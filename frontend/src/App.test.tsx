@@ -1,0 +1,9 @@
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+import App from './App';
+
+test('shows the sign-in screen by default', () => {
+  render(<App />);
+
+  expect(screen.getByRole('heading', { name: /sign in/i })).toBeInTheDocument();
+});
