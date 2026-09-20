@@ -1,4 +1,213 @@
-/* For information on how to create your own theme, please refer to:
-http://ionicframework.com/docs/theming/ */
-
 @import "tailwindcss";
+
+/* MMA Club Design System */
+
+:root {
+  --ion-color-primary: #A32626;
+  --ion-color-primary-rgb: 163, 38, 38;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #8B1E1E;
+  --ion-color-primary-tint: #B03B3B;
+
+  --ion-color-secondary: #B8894A;
+  --ion-color-secondary-rgb: 184, 137, 74;
+  --ion-color-secondary-contrast: #1A1A1A;
+  --ion-color-secondary-contrast-rgb: 26, 26, 26;
+  --ion-color-secondary-shade: #A27841;
+  --ion-color-secondary-tint: #BF955C;
+
+  --ion-color-tertiary: #232323;
+  --ion-color-tertiary-rgb: 35, 35, 35;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+  --ion-color-tertiary-shade: #1F1F1F;
+  --ion-color-tertiary-tint: #393939;
+
+  --ion-color-success: #2DD36F;
+  --ion-color-warning: #FFC409;
+  --ion-color-danger: #EB445A;
+  --ion-color-medium: #92949C;
+  --ion-color-light: #EDEAE5;
+
+  --ion-background-color: #0F0F0F;
+  --ion-background-color-rgb: 15, 15, 15;
+  --ion-text-color: #F5F3EF;
+  --ion-text-color-rgb: 245, 243, 239;
+
+  --ion-toolbar-background: #1A1A1A;
+  --ion-item-background: #1A1A1A;
+  --ion-card-background: #1A1A1A;
+  --ion-tab-bar-background: #141414;
+
+  --mma-red: #A32626;
+  --mma-red-dark: #8B1E1E;
+  --mma-charcoal: #1A1A1A;
+  --mma-charcoal-deep: #0F0F0F;
+  --mma-marble: #EDEAE5;
+  --mma-gold: #B8894A;
+  --mma-surface: #232323;
+  --mma-border: #2E2E2E;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--mma-charcoal-deep);
+  color: var(--mma-marble);
+}
+
+.font-display {
+  font-family: 'Bebas Neue', 'Anton', Impact, sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.surface {
+  background: var(--mma-charcoal);
+  border: 1px solid var(--mma-border);
+}
+
+.surface-elevated {
+  background: var(--mma-surface);
+  border: 1px solid var(--mma-border);
+}
+
+.accent-bar {
+  height: 3px;
+  background: linear-gradient(90deg, var(--mma-red), var(--mma-gold));
+  border-radius: 2px;
+}
+
+ion-content {
+  --background: var(--mma-charcoal-deep);
+}
+
+ion-toolbar {
+  --background: var(--mma-charcoal);
+  --color: var(--mma-marble);
+  --border-color: var(--mma-border);
+}
+
+ion-tab-bar {
+  --background: #141414;
+  --border: 1px solid var(--mma-border);
+  height: 60px;
+}
+
+ion-tab-button {
+  --color: #6B6B6B;
+  --color-selected: var(--mma-red);
+}
+
+ion-button {
+  --border-radius: 12px;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0.01em;
+}
+
+ion-card {
+  --background: var(--mma-charcoal);
+  border-radius: 16px;
+  box-shadow: none;
+  border: 1px solid var(--mma-border);
+  margin: 0;
+}
+
+ion-item {
+  --background: transparent;
+  --color: var(--mma-marble);
+  --border-color: var(--mma-border);
+  --padding-start: 0;
+  --inner-padding-end: 0;
+}
+
+ion-input,
+ion-select,
+ion-textarea {
+  --background: var(--mma-surface);
+  --color: var(--mma-marble);
+  --placeholder-color: #6B6B6B;
+  --padding-start: 14px;
+  --padding-end: 14px;
+  border-radius: 12px;
+  border: 1px solid var(--mma-border);
+}
+
+ion-searchbar {
+  --background: var(--mma-surface);
+  --color: var(--mma-marble);
+  --placeholder-color: #6B6B6B;
+  --icon-color: #6B6B6B;
+  --border-radius: 12px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.chip-active {
+  background: rgba(45, 211, 111, 0.15);
+  color: #2DD36F;
+}
+
+.chip-paused {
+  background: rgba(255, 196, 9, 0.15);
+  color: #FFC409;
+}
+
+.chip-pending {
+  background: rgba(184, 137, 74, 0.2);
+  color: var(--mma-gold);
+}
+
+.chip-cancelled {
+  background: rgba(235, 68, 90, 0.15);
+  color: #EB445A;
+}
+
+.chip-full {
+  background: rgba(163, 38, 38, 0.2);
+  color: #E85A5A;
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
+
+/*=======================================*/
+/*               Layout 
+/*=======================================*/
+@theme {
+  /* Your deep red / charcoal / marble palette */
+  --color-crimson-50:  #fef2f2;
+  --color-crimson-100: #ffe1e1;
+  --color-crimson-200: #ffc8c8;
+  --color-crimson-300: #ffa2a2;
+  --color-crimson-400: #f87171;
+  --color-crimson-500: #ef4444;
+  --color-crimson-600: #dc2626;
+  --color-crimson-700: #b91c1c;
+  --color-crimson-800: #991b1b;
+  --color-crimson-900: #7f1d1d;
+  --color-crimson-950: #450a0a;
+
+  --color-zinc-850: #202024;
+  --color-zinc-925: #121215;
+  --color-zinc-950: #09090b;
+
+  /* Fonts */
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-sans:    'Inter', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', monospace;
+}
+
+
