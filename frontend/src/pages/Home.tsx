@@ -1,5 +1,14 @@
+/**
+ * @file        Home.tsx
+ * @description Placeholder landing page. Not used by the current routes
+ *              but kept as a scaffold target.
+ * @author      Morwetsana Mahlatsepule
+ * @created     2026-09-18
+ * @updated     2026-09-28
+ * @version     1.0.0
+ */
+
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
 //import './Home.css';
 
 const Home: React.FC = () => {
@@ -16,7 +25,6 @@ const Home: React.FC = () => {
             <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer />
       </IonContent>
     </IonPage>
   );

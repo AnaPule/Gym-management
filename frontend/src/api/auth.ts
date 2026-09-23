@@ -1,3 +1,14 @@
+/**
+ * @file        auth.ts
+ * @description Auth API calls — sendOtp, verifyOtp. Used by the login
+ *              page and the onboarding verify step (shared by adult and
+ *              minor flows).
+ * @author      Morwetsana Mahlatsepule
+ * @created     2026-09-20
+ * @updated     2026-09-20
+ * @version     1.0.0
+ */
+
 import { apiFetch } from './client';
 
 type SendOtpArgs = { email: string; purpose: 'login' | 'register' };

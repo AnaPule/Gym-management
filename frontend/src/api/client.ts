@@ -1,6 +1,15 @@
-// Minimal fetch wrapper. No backend yet — every call currently resolves with
-// the payload it would send, so the UI can be built without a server.
-
+/**
+ * @file        client.ts
+ * @description Thin fetch wrapper. No backend yet — every call currently
+ *              simulates a network round-trip so the UI can be developed
+ *              end to end before Rails lands.
+ * @author      Morwetsana Mahlatsepule
+ * @created     2026-09-20
+ * @updated     2026-09-20
+ * @version     1.0.0
+ *
+ * TODO: point BASE_URL at import.meta.env.VITE_API_URL once the API exists.
+ */
 const BASE_URL = ''; // TODO: wire to import.meta.env.VITE_API_URL
 
 export class ApiError extends Error {

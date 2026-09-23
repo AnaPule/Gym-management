@@ -1,3 +1,13 @@
+/**
+ * @file        ForgotPasswordPage.tsx
+ * @description Forgot-password fallback — requests a reset code by email.
+ *              With OTP-only login this doubles as an "email not arriving"
+ *              helper.
+ * @author      Morwetsana Mahlatsepule
+ * @created     2026-09-20
+ * @updated     2026-09-20
+ * @version     1.0.0
+ */
 
 import { useNavigate } from 'react-router-dom';
 import React, { useState, useRef, useEffect } from 'react';

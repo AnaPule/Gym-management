@@ -1,3 +1,17 @@
+/**
+ * @file        SignUpPage.tsx
+ * @description Signup chooser — adult self-signup or guardian-led minor
+ *              signup.
+ * @author      Morwetsana Mahlatsepule
+ * @created     2026-09-20
+ * @updated     2026-09-22
+ * @version     1.1.0
+ *
+ * CHANGELOG:
+ *   1.0.0  2026-09-20  Placeholder
+ *   1.1.0  2026-09-22  Wire routes to /signup/adult and /signup/minor
+ */
+
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -45,7 +59,7 @@ const SignUpPage: React.FC = () => {
             variant="secondary"
             size="lg"
             fullWidth
-            onClick={() => console.log('youth signup — coming soon')}
+            onClick={() => navigate('/signup/minor')}
           >
             Register a Youth Member
           </Button>

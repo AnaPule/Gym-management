@@ -1,4 +1,12 @@
-
+/**
+ * @file        ContactPage.tsx
+ * @description Contact form — name, email, subject, message. Submits to
+ *              a stub endpoint until the backend is wired.
+ * @author      Morwetsana Mahlatsepule
+ * @created     2026-09-20
+ * @updated     2026-09-20
+ * @version     1.0.0
+ */
 
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';

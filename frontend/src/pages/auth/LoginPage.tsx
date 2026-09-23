@@ -1,4 +1,16 @@
-
+/**
+ * @file        LoginPage.tsx
+ * @description Two-step email + OTP login. Links to signup, forgot
+ *              password, contact, and the AI assistant.
+ * @author      Morwetsana Mahlatsepule
+ * @created     2026-09-18
+ * @updated     2026-09-20
+ * @version     2.0.0
+ *
+ * CHANGELOG:
+ *   1.0.0  2026-09-18  Email + password mock
+ *   2.0.0  2026-09-20  Replace with OTP flow (send + verify)
+ */
 
 import { useNavigate } from 'react-router-dom';
 import { useState, useRef, useEffect } from "react";
