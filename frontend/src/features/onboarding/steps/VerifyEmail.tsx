@@ -1,3 +1,17 @@
+/**
+ * @file        VerifyEmail.tsx
+ * @description Step 2 — single-input 6-digit OTP. Shared verbatim by
+ *              adult and minor flows; the caller supplies the email.
+ * @author      Morwetsana Mahlatsepule
+ * @created     2026-09-20
+ * @updated     2026-09-23
+ * @version     1.1.0
+ *
+ * CHANGELOG:
+ *   1.0.0  2026-09-20  OTP for login
+ *   1.1.0  2026-09-22  Extract into shared step for onboarding
+ */
+
 import React, { useEffect, useRef, useState } from 'react';
 import { Form, FormField } from '@/components/ui/Form';
 import Button from '@/components/ui/Button';

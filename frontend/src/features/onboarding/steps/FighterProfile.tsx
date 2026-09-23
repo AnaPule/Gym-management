@@ -1,14 +1,30 @@
+/**
+ * @file        FighterProfile.tsx
+ * @description Step 4 of the onboarding wizard. Collects weight, height,
+ *              gender, experience, and an optional photo. Shows a live
+ *              weight-class prediction as the user types their weight.
+ * @author      Morwetsana Mahlatsepule
+ * @created     2026-09-21
+ * @updated     2026-09-23
+ * @version     1.1.0
+ *
+ * CHANGELOG:
+ *   1.0.0  2026-09-21  Initial step (adult only)
+ *   1.1.0  2026-09-22  Shared between adult and minor flows via
+ *                      OnboardingForm
+ */
+
 import React, { useMemo, useRef } from 'react';
 import { Form, FormField } from '@/components/ui/Form';
 import Button from '@/components/ui/Button';
 import LinkButton from '@/components/ui/LinkButton';
 import Dropdown from '@/components/ui/Dropdown';
 import { weightClassFor } from '@/lib/WeightClass';
-import type { AdultSignupForm } from '@/types/onboarding/types';
+import type { OnboardingForm } from '@/types/onboarding/types';
 
 interface Props {
-    form: AdultSignupForm;
-    setForm: React.Dispatch<React.SetStateAction<AdultSignupForm>>;
+    form: OnboardingForm;
+    setForm: React.Dispatch<React.SetStateAction<OnboardingForm>>;
     canContinue: boolean;
     onContinue: () => void;
     onBack: () => void;
@@ -28,9 +44,9 @@ const FighterProfile: React.FC<Props> = ({ form, setForm, canContinue, onContinu
     const fileRef = useRef<HTMLInputElement>(null);
     const { fighterProfile: fp } = form;
 
-    const update = <K extends keyof AdultSignupForm['fighterProfile']>(
+    const update = <K extends keyof OnboardingForm['fighterProfile']>(
         key: K,
-        value: AdultSignupForm['fighterProfile'][K]
+        value: OnboardingForm['fighterProfile'][K]
     ) =>
         setForm((f) => ({
             ...f,

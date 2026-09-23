@@ -1,8 +1,8 @@
 /**
- * @file        AdultMember.tsx
- * @description Named wrapper — renders OnboardingShell with mode="adult".
+ * @file        MinorMember.tsx
+ * @description Named wrapper — renders OnboardingShell with mode="minor".
  * @author      Morwetsana Mahlatsepule
- * @created     2026-09-22
+ * @created     2026-09-23
  * @updated     2026-09-23
  * @version     1.0.0
  */
@@ -15,8 +15,8 @@ interface Props {
   onCancel?: () => void;
 }
 
-const AdultMember: React.FC<Props> = (props) => (
-  <OnboardingShell mode="adult" {...props} />
+const MinorMember: React.FC<Props> = (props) => (
+  <OnboardingShell mode="minor" {...props} />
 );
 
-export default AdultMember;
+export default MinorMember;
