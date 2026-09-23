@@ -1,3 +1,18 @@
+/**
+ * @file        Dropdown.tsx
+ * @description Typeable combobox — pick from preset options or type a
+ *              custom value. Used for relationship, medical scheme,
+ *              school, grade, experience.
+ * @author      Morwetsana Mahlatsepule
+ * @created     2026-09-20
+ * @updated     2026-09-23
+ * @version     1.1.0
+ *
+ * CHANGELOG:
+ *   1.0.0  2026-09-20  Initial
+ *   1.1.0  2026-09-23  Add `disabled` prop
+ */
+
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 
 export interface ComboboxOption {

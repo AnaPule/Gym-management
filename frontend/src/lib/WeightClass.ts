@@ -1,3 +1,13 @@
+/**
+ * @file        WeightClass.ts
+ * @description Maps a weight in kg to an MMA weight class. Used in the
+ *              fighter profile step and the confirmation review.
+ * @author      Morwetsana Mahlatsepule
+ * @created     2026-09-20
+ * @updated     2026-09-20
+ * @version     1.0.0
+ */
+
 export interface WeightClass {
   name: string;
   minKg: number;

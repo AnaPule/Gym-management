@@ -1,3 +1,18 @@
+/**
+ * @file        Phone.tsx
+ * @description Phone input — country picker with flag + dial code on the
+ *              left, national number on the right. Shared by adult,
+ *              minor, guardian, and emergency contact forms.
+ * @author      Morwetsana Mahlatsepule
+ * @created     2026-09-20
+ * @updated     2026-09-23
+ * @version     1.1.0
+ *
+ * CHANGELOG:
+ *   1.0.0  2026-09-20  Initial
+ *   1.1.0  2026-09-23  Add `disabled` prop for "same as primary" lock
+ */
+
 import React, { useEffect, useRef, useState } from 'react';
 import { COUNTRIES, countryByIso, digitsOnly } from '@/lib/countries';
 
@@ -9,6 +24,7 @@ interface PhoneInputProps {
   required?: boolean;
   error?: string;
   hint?: string;
+  disabled?: boolean;
   maxDigits?: number;
 }
 
@@ -20,6 +36,7 @@ const PhoneInput: React.FC<PhoneInputProps> = ({
   required,
   error,
   hint,
+  disabled = false,
   maxDigits = 9,
 }) => {
   const [open, setOpen] = useState(false);

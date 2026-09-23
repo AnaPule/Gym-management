@@ -1,3 +1,16 @@
+/**
+ * @file        AiAssistantPanel.tsx
+ * @description Medium floating panel — chat interface with starter
+ *              prompts, message list, and composer. Mocked replies until
+ *              the AI endpoint exists.
+ * @author      Morwetsana Mahlatsepule
+ * @created     2026-09-20
+ * @updated     2026-09-20 
+ * @version     1.0.0
+ *
+ * TODO: POST to /api/v1/ai/chat; replace mocked replies.
+ */
+
 import React, { useState, useRef, useEffect } from 'react';
 
 interface AiAssistantPanelProps {

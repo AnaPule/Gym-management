@@ -1,3 +1,13 @@
+/**
+ * @file        Logo.tsx
+ * @description Logo container. Crimson background with an image inside,
+ *              centers itself based on `position`.
+ * @author      Morwetsana Mahlatsepule
+ * @created     2026-09-20
+ * @updated     2026-09-21
+ * @version     1.0.0
+ */
+
 import React from 'react';
 
 interface LogoProps {

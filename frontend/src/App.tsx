@@ -1,3 +1,17 @@
+/**
+ * @file        App.tsx
+ * @description Root app shell — Ionic setup, BrowserRouter, AI assistant
+ *              provider, global styles, routes.
+ * @author      Morwetsana Mahlatsepule
+ * @created     2026-09-18
+ * @updated     2026-09-23
+ * @version     1.1.0
+ *
+ * CHANGELOG:
+ *   1.0.0  2026-09-18  Ionic starter
+ *   1.1.0  2026-09-20  Wire BrowserRouter + AI assistant
+ */
+
 import React from 'react';
 import { IonApp, setupIonicReact } from '@ionic/react';
 import { BrowserRouter } from 'react-router-dom';

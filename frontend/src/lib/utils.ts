@@ -1,3 +1,13 @@
+/**
+ * @file        utils.ts
+ * @description Generic helpers shared across the frontend. Currently
+ *              houses `cn` (Tailwind class merge).
+ * @author      Morwetsana Mahlatsepule
+ * @created     2026-09-20
+ * @updated     2026-09-20
+ * @version     1.0.0
+ */
+
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 

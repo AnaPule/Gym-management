@@ -1,3 +1,18 @@
+/**
+ * @file        Form.tsx
+ * @description Form shell + FormField primitive. Form handles card shell,
+ *              error banner, loading state. FormField handles labels,
+ *              required asterisk, hint text, error, and OTP variant.
+ * @author      Morwetsana Mahlatsepule
+ * @created     2026-09-20
+ * @updated     2026-09-21
+ * @version     1.1.0
+ *
+ * CHANGELOG:
+ *   1.0.0  2026-09-20  Initial
+ *   1.1.0  2026-09-21  Add otp variant, forwardRef, required asterisk
+ */
+
 import React from 'react';
 import type { FormHTMLAttributes, InputHTMLAttributes, ReactNode } from 'react';
 
@@ -55,12 +70,13 @@ interface FormFieldProps extends InputHTMLAttributes<HTMLInputElement> {
   error?: string;
   trailing?: ReactNode;
   otp?: boolean;
+  disabled?: boolean;
   hideRequiredMark?: boolean;
 }
 
 export const FormField = React.forwardRef<HTMLInputElement, FormFieldProps>(
   (
-    { label, hint, error, trailing, otp = false, hideRequiredMark = false, className = '', id, required, ...rest },
+    { label, hint, error, trailing, otp = false, disabled = false, hideRequiredMark = false, className = '', id, required, ...rest },
     ref
   ) => {
     const inputId = id || `field-${label.replace(/\s+/g, '-').toLowerCase()}`;

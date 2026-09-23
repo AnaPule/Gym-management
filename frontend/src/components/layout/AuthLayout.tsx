@@ -1,3 +1,18 @@
+/**
+ * @file        AuthLayout.tsx
+ * @description Split-panel auth shell — brand sidebar with quote on the
+ *              left (lg+), content on the right. Used by login, signup,
+ *              forgot password, contact, and the onboarding wizard.
+ * @author      Morwetsana Mahlatsepule
+ * @created     2026-09-20
+ * @updated     2026-09-23
+ * @version     1.1.0
+ *
+ * CHANGELOG:
+ *   1.0.0  2026-09-20  Initial split layout
+ *   1.1.0  2026-09-21  Stable random quote via useMemo; content centered
+ */
+
 import React, { useMemo } from 'react';
 import type { ReactNode } from 'react';
 
@@ -56,7 +71,7 @@ export default function AuthLayout({ headline, subtext = '', children }: AuthLay
 
         {/* Text Content */}
         <div className="relative z-10">
-          <h1 className="text-3xl xl:text-4xl font-semibold leading-tight text-white">
+          <h1 className="text-3xl xl:text-4xl font-semibold leading-tight text-white capitalize">
             {headline}
           </h1>
           <p className="mt-4 text-sm font-light leading-relaxed text-zinc-400 max-w-xs">

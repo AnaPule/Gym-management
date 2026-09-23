@@ -1,3 +1,17 @@
+/**
+ * @file        OnboardingStepper.tsx
+ * @description Minimal dot stepper — current step caption, ticked marks
+ *              for completed-and-valid steps, jump-back on visited steps.
+ * @author      Morwetsana Mahlatsepule
+ * @created     2026-09-21
+ * @updated     2026-09-23
+ * @version     1.1.0
+ *
+ * CHANGELOG:
+ *   1.0.0  2026-09-21  Initial
+ *   1.1.0  2026-09-22  Add step description + label caption below row
+ */
+
 import React from 'react';
 import { STEPS } from '@/types/onboarding/steps';
 import Logo from '@/components/ui/Logo';

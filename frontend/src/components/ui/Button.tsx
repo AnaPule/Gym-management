@@ -1,3 +1,17 @@
+/**
+ * @file        Button.tsx
+ * @description Primary button component. Pill-shaped, deep crimson, with
+ *              variant, size, loading, icon, and fullWidth support.
+ * @author      Morwetsana Mahlatsepule
+ * @created     2026-09-18
+ * @updated     2026-09-20
+ * @version     1.1.0
+ *
+ * CHANGELOG:
+ *   1.0.0  2026-09-18  Initial
+ *   1.1.0  2026-09-20  Switch to pill; soften press state; add variants
+ */
+
 import React from 'react';
 
 export type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'danger' | 'outline';

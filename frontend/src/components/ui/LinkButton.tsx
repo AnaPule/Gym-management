@@ -1,3 +1,13 @@
+/**
+ * @file        LinkButton.tsx
+ * @description Text-only action link. Used for secondary actions like
+ *              "Create an account", "Forgot password", "Resend code".
+ * @author      Morwetsana Mahlatsepule
+ * @created     2026-09-20
+ * @updated     2026-09-21
+ * @version     1.0.0
+ */
+
 import React from 'react';
 
 export type LinkButtonTone = 'default' | 'accent' | 'muted';

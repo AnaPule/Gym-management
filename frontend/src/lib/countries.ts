@@ -1,3 +1,13 @@
+/**
+ * @file        countries.ts
+ * @description Country + dialling code data used by the phone input and
+ *              phone composition helpers.
+ * @author      Morwetsana Mahlatsepule
+ * @created     2026-09-20
+ * @updated     2026-09-20
+ * @version     1.0.0
+ */
+
 export interface Country {
   iso: string;
   name: string;

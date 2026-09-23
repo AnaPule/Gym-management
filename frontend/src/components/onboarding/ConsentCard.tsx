@@ -1,3 +1,13 @@
+/**
+ * @file        ConsentCard.tsx
+ * @description One signable consent — title, scrollable body, checkbox.
+ *              Reused for adult consents and the extended minor set.
+ * @author      Morwetsana Mahlatsepule
+ * @created     2026-09-21
+ * @updated     2026-09-21
+ * @version     1.0.0
+ */
+
 import React from 'react';
 
 interface ConsentCardProps {

@@ -1,3 +1,13 @@
+/**
+ * @file        AiAssistant.tsx
+ * @description AI assistant provider + hook. Wraps the app so any page
+ *              can open the panel via `useAiAssistant()`.
+ * @author      Morwetsana Mahlatsepule
+ * @created     2026-09-20
+ * @updated     2026-09-20
+ * @version     1.0.0
+ */
+
 import React, { useState } from 'react';
 import AiAssistantButton from './AiAssistantButton';
 import AiAssistantPanel from './AiAssistantPanel';

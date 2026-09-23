@@ -1,3 +1,13 @@
+/**
+ * @file        AiAssistantButton.tsx
+ * @description Floating round bubble bottom-right that toggles the AI
+ *              panel.
+ * @author      Morwetsana Mahlatsepule
+ * @created     2026-09-20
+ * @updated     2026-09-20
+ * @version     1.0.0
+ */
+
 import React from 'react';
 
 interface AiAssistantButtonProps {
