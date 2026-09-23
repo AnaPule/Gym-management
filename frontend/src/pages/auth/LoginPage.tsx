@@ -162,10 +162,6 @@ const LoginPage: React.FC = () => {
                       Create an account
                     </LinkButton>
                     <span className="text-zinc-700">·</span>
-                    <LinkButton tone="muted" onClick={() => navigate('/forgot-password')}>
-                      Forgot password?
-                    </LinkButton>
-                    <span className="text-zinc-700">·</span>
                     <LinkButton tone="muted" onClick={() => navigate('/contact')}>
                       Contact us
                     </LinkButton>
