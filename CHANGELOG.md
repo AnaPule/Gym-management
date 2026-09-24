@@ -5,6 +5,18 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/).
 
 ---
 
+### 2026-09-24 — Contact page: categories + safeguarding routing
+
+**Added**
+- Category dropdown on contact form: General enquiry, Membership question,
+  Complaint, Feedback, Lost property, About my child.
+- Inline safeguarding notice shown when "About my child" is selected.
+- Success screen confirms safeguarding routing when that category was used.
+
+**Changed**
+- Contact page no longer assumes unauthenticated context. Reachable from
+  both login/signup (public) and, later, the dashboard sidebar.
+
 ## [Unreleased]
 
 ### 2026-09-23 — Kill forgot password, minor flow polish
